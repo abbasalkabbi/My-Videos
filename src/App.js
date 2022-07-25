@@ -3,6 +3,7 @@ import  React from "react";
 import { Routes, Route,NavLink } from "react-router-dom";
 import Home from "./pages/Home"
 import About from "./pages/About"
+import Video from "./pages/Video";
 
 function App() {
   return (
@@ -67,6 +68,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="about" element={<About />} />
+        <Route path="video/:id" element={<Video />} />
       </Routes>
     </div>
   );
