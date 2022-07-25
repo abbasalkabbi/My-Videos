@@ -24,7 +24,13 @@ class Video extends Component{
     render(){
         return (
             <>
-            Video {this.state.id}
+            <div style={{'width':'400px'}}>
+                <div class="ratio ratio-16x9">
+                    <video width="320" height="240" controls>
+                        <source src={require('../videos/MyVideo.mp4')} type="video/mp4"/>
+                    </video>
+                </div>
+            </div>
             </>
         )
     }
