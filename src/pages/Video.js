@@ -23,15 +23,24 @@ class Video extends Component{
     // render
     render(){
         return (
-            <>
-            <div style={{'width':'400px'}}>
-                <div class="ratio ratio-16x9">
-                    <video width="320" height="240" controls>
-                        <source src={require('../videos/MyVideo.mp4')} type="video/mp4"/>
-                    </video>
+            <div className="container">
+            <div className="row">
+                {/* List of next video */}
+                <div className="col-sm-12 col-md-3 border bg-light">
+                    hi
                 </div>
+                {/*END List of next video */}
+                {/* video */}
+                <div className="col-sm-12 col-md-9">
+                    <div class="ratio ratio-16x9">
+                        <video width="320" height="240" controls>
+                            <source src={require('../videos/MyVideo.mp4')} type="video/mp4"/>
+                        </video>
+                    </div>
+                </div>
+                {/* End Video */}
             </div>
-            </>
+            </div>
         )
     }
     // render End
