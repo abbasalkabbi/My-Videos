@@ -38,16 +38,28 @@ class Video extends Component{
                         {/* end video */}
                         {/* video info */}
                         <div className="card">
-                            <div className="card-header">
-                                <h5 className="card-title">Special title treatment</h5>
+                            <div className="card-header row">
+                                <h5 className="card-title col-8">Special title treatment</h5>
+                                <p className="info-count card-text col-4">100 viwes 10 likes 20 unlike</p>
                             </div>
-                            <div className="card-body">
+                            {/* card body */}
+                            <div className="card-body row">
                                 {/* like list */}
-                                <div className="btn-group" role="group" aria-label="Basic example">
-                                    <button type="button" className="btn btn-primary"> <Icon.HandThumbsUp /></button>
-                                    <button type="button" className="btn btn-danger"><Icon.HandThumbsDown /></button>
+                                <div className="btn-group col-4 like-unlike" role="group" aria-label="Basic example">
+                                    <button type="button" className="btn btn-outline-primary"> <Icon.HandThumbsUp /></button>
+                                    <button type="button" className="btn btn-outline-danger"><Icon.HandThumbsDown /></button>
                                 </div>
+                                {/*End  like list */}
+                                {/* channel */}
+                                <a className="col-8 channel " href="/l">
+                                    <p className="">
+                                        Abbas Alkbbi
+                                    </p>
+                                    <img src={require('../videos/fs.jpg')} class="channel-img  img-thumbnail" alt="..."/>
+                                </a>
+                                {/*END channel */}
                             </div>
+                            {/* End Card body */}
                         </div>
                         {/* END video info  */}
                     </div>
