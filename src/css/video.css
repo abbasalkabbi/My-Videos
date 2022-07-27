@@ -1,5 +1,28 @@
 
-.float-right{
-    /* right: 0px; */
-    border: 1px saddlebrown solid;
+.info-count{
+    text-align: end;
+    color: #606060 ;
+}
+.like-unlike{
+    display: flex;
+    align-items: center;
+}
+.like-unlike button{
+    height: 40px;
+}
+.channel{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-decoration: none;
+}
+.channel p{
+    width: calc(100% - 70px);
+    text-align: end;
+    padding-right: 10px;
+    color: black;
+}
+.channel-img{
+    width: 70px;
+    height: 70px;
 }
