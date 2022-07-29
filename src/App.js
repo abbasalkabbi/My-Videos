@@ -9,7 +9,7 @@ function App() {
   return (
     <div className="App">
     {/* Navbar */}
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" >
       {/* Content Navbat */}
       <div class="container-fluid">
         <a class="navbar-brand" href="#">My Videos</a>

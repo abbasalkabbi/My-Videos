@@ -26,3 +26,22 @@
     width: 70px;
     height: 70px;
 }
+.list-videos .card{
+    text-decoration: none;
+    color: #000;
+    display: flex;
+}
+.list-videos .item-video{
+    height: 100px;
+}
+.list-videos .item-video img {
+    height: 100px; width: 100px;
+}
+@media screen  and (max-width:600px){
+    .list-videos .item-video{
+        height: 300px;
+    }
+    .list-videos .item-video img {
+        height: 200px; width: 100%;
+    }
+}

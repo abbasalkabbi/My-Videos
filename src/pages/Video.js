@@ -21,6 +21,19 @@ class Video extends Component{
         })
     }
     // END componentDidMount
+    loop(){
+        return(<a href="/h" className="card item-video">
+        <div  className="row">
+            <div className="col-sm-6 col-md-4">
+                <img src={require('../videos/fs.jpg')} class="img-thumbnail" alt="..."/>
+            </div>
+            
+            <div className="col-sm-6 col-md-8">
+                <p className="card-text ">100 viwes 10 likes 20 unlike</p>
+            </div>
+        </div>
+    </a>)
+}
     // render
     render(){
         return (
@@ -28,7 +41,7 @@ class Video extends Component{
                 {/* div for video and list  */}
                 <div className="row">
                     {/* video */}
-                    <div className="col-sm-12 col-md-9 ">
+                    <div className="video col-sm-12 col-md-9 ">
                         {/* video  */}
                         <div class="ratio ratio-16x9">
                             <video width="320" height="240" controls>
@@ -65,8 +78,38 @@ class Video extends Component{
                     </div>
                     {/* End Video */}
                     {/* List of next video */}
-                    <div className="col-sm-12 col-md-3 border bg-light">
-                        hi
+                    <div className="list-videos col-sm-12 col-md-3 border bg-light">
+                        {/* item video  */}
+                        <a href="/h" className="card item-video">
+                            <div  className="row">
+                                {/* img-thumbnail */}
+                                <div className="col-sm-12 col-md-4">
+                                    <img src={require('../videos/fs.jpg')} class="img-thumbnail" alt="..."/>
+                                </div>
+                                {/*END  img-thumbnail */}
+                                {/* title video */}
+                                <div className="col-sm-12 col-md-8">
+                                    <p className="card-text ">100 viwes 10 likes 20 unlike</p>
+                                </div>
+                                {/* title video END */}
+                            </div>
+                        </a>
+                        {/* END item video  */}
+                        {/* test */}
+                        {this.loop()}
+                        {this.loop()}
+                        {this.loop()}
+                        {this.loop()}
+                        {this.loop()}
+                        {this.loop()}
+                        {this.loop()}
+                        {this.loop()}
+                        {this.loop()}
+                        {this.loop()}
+                        {this.loop()}
+                        {this.loop()}
+                        {this.loop()}
+                        {/* END test  */}
                     </div>
                     {/*END List of next video */}
                 </div>
