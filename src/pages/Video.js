@@ -41,7 +41,7 @@ class Video extends Component{
                 {/* div for video and list  */}
                 <div className="row">
                     {/* video */}
-                    <div className="video col-sm-12 col-md-9 ">
+                    <div className="video  col-sm-12 col-md-9 ">
                         {/* video  */}
                         <div class="ratio ratio-16x9">
                             <video width="320" height="240" controls>
@@ -89,7 +89,7 @@ class Video extends Component{
                                 {/*END  img-thumbnail */}
                                 {/* title video */}
                                 <div className="col-sm-12 col-md-8">
-                                    <p className="card-text ">100 viwes 10 likes 20 unlike</p>
+                                    <p className="card-text">100 viwes 10 likes 20 unlike</p>
                                 </div>
                                 {/* title video END */}
                             </div>
